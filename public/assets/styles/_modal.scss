@@ -1,0 +1,102 @@
+@import './flexbox';
+
+.modal-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 200vh;
+	pointer-events: all;
+	// filter: blur(2.5rem);
+	background: rgba(0, 0, 0, 0.4);
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal {
+	width: 400px;
+	position: absolute;
+	z-index: 15 !important;
+	filter: blur(0);
+	background: #fff;
+	border-radius: 1rem;
+	top: 30%;
+	@include flexbox(center, center, column);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 2rem;
+	padding-bottom: 1rem;
+	.cross-button {
+		position: absolute;
+		box-shadow: 0 2px 5px 0 rgba(48, 48, 69, 0.35);
+		border: none;
+		outline: none;
+		cursor: pointer;
+		transition: 0.3s ease-in;
+		height: 40px;
+		width: 40px;
+		border-radius: 50%;
+		background: #fff;
+		left: 85%;
+		top: -8%;
+		img {
+			height: 15px;
+			width: 15px;
+		}
+		:focus,
+		:active {
+			transform: scale(1.05);
+		}
+	}
+	.doc-info {
+		display: flex;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		.img-cnr {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.doc-img {
+				position: relative;
+				height: 8rem;
+				width: 8rem;
+				top: -60%;
+				border-radius: 50%;
+				left: -8%;
+			}
+		}
+		.text {
+			// background: red;
+			width: 150px;
+			margin-left: 1.3rem;
+			line-height: 1.5rem;
+			.card-title {
+				font-family: 'Avenir 5';
+				font-weight: bold;
+			}
+		}
+	}
+	.interact {
+		width: 100%;
+		@include flexbox(center, center, column);
+		.row {
+			width: 100%;
+			text-decoration: none;
+			@include flexbox(space-between, center, row);
+			color: #303045;
+		}
+		a.row {
+			font-weight: bold;
+			margin-bottom: 1.3rem;
+			@include flexbox(center, center, row);
+		}
+		.call-button,
+		.whatsapp-button {
+			img {
+				height: 3rem;
+			}
+		}
+	}
+}

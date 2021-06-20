@@ -1,0 +1,33 @@
+.call-button {
+	cursor: pointer;
+	// height: 4rem;
+	transition: 0.3s ease-in-out;
+	:hover,
+	:active,
+	:focus {
+		transform: scale(1.07);
+	}
+}
+
+.three-icons {
+	cursor: pointer;
+	display: none;
+}
+
+.floating-button {
+	position: sticky;
+	bottom: 2%;
+	right: 3%;
+	float: right;
+	cursor: pointer;
+}
+
+.control-dots {
+	li.selected {
+		background: #5f7aff !important;
+	}
+}
+
+.cross-button {
+	z-index: 200;
+}

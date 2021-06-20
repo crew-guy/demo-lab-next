@@ -1,0 +1,30 @@
+import React from 'react'
+import CallToAction from '@components/CallToAction'
+import Image from 'next/image'
+
+interface ISection{
+    // TODO : Fix this image type to include properly defined types as per use case to avoid type checkin errors 
+    imgSrc: any,
+    title:string,
+    // linkText:string,
+    // children:any,
+}
+
+const Section: React.FC<ISection> = ({
+    imgSrc,
+    title,
+    // children,
+    // linkText
+}) => {
+    // console.log(children)
+    return (
+        <section>
+            <div className="section-heading">
+                <Image src={imgSrc} alt="" className = "section-logo" />
+                <p className="section-title">{title}</p>
+            </div>
+        </section>
+    )
+}
+
+export default Section
