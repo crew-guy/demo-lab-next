@@ -1,25 +1,48 @@
-import imgSrc from '@assets/images/location-icon.svg'
-import Section from '@components/Section'
-import {bucketID} from "@data/lab"
+import React from 'react'
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+import Link from 'next/link'
 
-const mapImage = `https://cdn.farmako.in/labs/${bucketID}/map-image.svg` 
+const containerStyle = {
+  width: '400px',
+  height: '400px'
+};
 
-const Location = () => {
-    return (
-        <>
-            <Section
-                imgSrc={imgSrc}
-                // linkText={"All Timings"}
-                title={"Location"}
+const center = {
+  lat: 28.6184,
+  lng: 77.3738
+};
+
+function Location() {
+  const { isLoaded } = useJsApiLoader({
+    id: 'google-map-script',
+    googleMapsApiKey: "AIzaSyBfpx4ARryAr9g2L9_kVvD-xmURtdJeZ5E"
+  })
+
+  const [map, setMap] = React.useState(null)
+
+  const onLoad = React.useCallback(function callback(map) {
+    const bounds = new window.google.maps.LatLngBounds();
+    map.fitBounds(bounds);
+    setMap(map)
+  }, [])
+
+  const onUnmount = React.useCallback(function callback(map) {
+    setMap(null)
+  }, [])
+
+    return isLoaded ? (
+      <Link href="http://maps.google.com/maps?q=28.6184,77.3738">
+        <GoogleMap
+            mapContainerStyle={containerStyle}
+            center={center}
+            zoom={10}
+            onLoad={onLoad}
+            onUnmount={onUnmount}
             >
-            </Section>
-            <div className="map-img">
-                <a href="https://www.justdial.com/Delhi/Dr-Yogita-Sagar-Dental-Care-Greater-Kailash/011PXX11-XX11-150727214138-O2E2_BZDET">
-                    <img src={mapImage} alt="" />
-                </a>
-            </div>
-        </>
-    )
+            { /* Child components, such as markers, info windows, etc. */ }
+        </GoogleMap>
+    </Link>
+  ) : <></>
 }
 
 export default Location

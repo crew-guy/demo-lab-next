@@ -28,11 +28,13 @@ export const Header = () => {
                     showArrows={false}
                     >
                     {
-                        lab.labHeroImages.map(image => (
-                            <div>
-                                <img src={image} />
+                        lab.labHeroImages.map((image, i) => {
+                            console.log(image)
+                            return (
+                            <div key={i} >
+                                <Image layout='fill' src={image} />
                             </div>
-                        ))
+                        )})
                     }
                 </Carousel>
             </div>

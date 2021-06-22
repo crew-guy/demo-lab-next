@@ -3,9 +3,10 @@
 interface labObj {
     labName: string,
     labLocation: string,
-    labHeroImages: Array<string>,
+    labHeroImages: Array<any>,
     contactNumber: string,
-    coordinates:string
+    coordinates:string,
+    labLink:string,
 }
 export const bucketID = "d158ed5e-221c-40cb-af9e-091bf562e660"
 
@@ -19,5 +20,5 @@ export const lab : labObj = {
     ],
     contactNumber: "+919810414970",
     labLocation: "Gurgaon Sector 52, Gurgaon",
-    coordinates:"https://geo:28.4379,77.0785"
+    labLink : "http://maps.google.com/maps?q=28.6184,77.3738"
 }

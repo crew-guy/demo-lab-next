@@ -1,29 +1,40 @@
 import React from 'react'
-import imgSrc from '@assets/images/doc-icon.svg'
+import imgSrc from '@assets/images/like-icon.svg'
 import CallToAction from '@components/CallToAction'
 import Section from '@components/Section'
-import Card from '@components/Card'
-import {doctors} from '@data/doctors'
+import {services} from '@data/services'
+import { doctors } from '@data/doctors'
 
+//TODO Generate even these "some services lab offers" from data
+// import services from '../../data/services'
 
-const Doctors = () => {
+const Facilities = () => {
     return (
-        <div>
-        <Section
-            imgSrc={imgSrc}
-            title={"Doctors and Pathologists"}
-        >
-        </Section>
-            <div className="section-body cards-container">
-                {doctors.map((doctor,i) => (
-                    <Card key={i} doctor={doctor} /> 
-                ))}
-        </div>
-        <div className="section-cta" style={{display:"none"}} >
-            <CallToAction destPath={'/doctors'} linkText={'All doctors'}/>
-        </div>
-    </div>
+        <>
+            <Section
+                imgSrc={imgSrc}
+                // linkText={"All Timings"}
+                title={"Facilities & Tests"}
+                >
+            </Section>
+            <div className="section-body">
+                {services.map((service, i) => {
+                    if (i > 1)
+                        return
+                    console.log(service,i)
+                    return (
+                        <p>{service.name}</p>
+                    )
+                })}
+                <div>
+                    <span>...</span>
+                    <span className="section-cta">
+                        <CallToAction destPath={'/facilities'} linkText={'All facilities'}/>
+                    </span>
+                </div>
+            </div>
+        </>
     )
 }
 
-export default Doctors
+export default Facilities

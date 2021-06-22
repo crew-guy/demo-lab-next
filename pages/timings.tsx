@@ -1,10 +1,11 @@
 import React from 'react'
 import floatBack from '../../assets/images/float-back.svg'
-import { timings } from '../../data/timings';
-import Backbutton from '../Backbutton';
+import { timings } from '@data/timings';
+import Backbutton from '@components/Backbutton';
 import moment from 'moment'
 
 const TimingsLayout = () => {
+    console.log(timings)
     return (
         <>
             <div className="layout-container">

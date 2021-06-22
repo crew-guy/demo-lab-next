@@ -12,7 +12,7 @@ interface doctorObj {
 
 export const doctors : Array<doctorObj> = [
     {
-        name:"Dr. Asha Sharma",
+        name:"Dr. Yogita Sagar",
         qualification: "DGO, MBBS",
         imgSrc:docImage1,
         speciality:"Obstetrics, Gynaecology",

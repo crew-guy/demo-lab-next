@@ -30,7 +30,10 @@
       ],
       "@assets/*": [
         "./public/assets/*"
-      ]
+      ],
+      "@fonts/*": [
+        "./public/assets/fonts/*"
+      ],
     },
     "strict": false
   },

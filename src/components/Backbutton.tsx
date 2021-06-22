@@ -1,12 +1,12 @@
 import React from 'react'
-import floatBack from '../assets/images/float-back.svg'
-import { useHistory } from 'react-router-dom'
+import floatBack from '@assets/images/float-back.svg'
 import Image from 'next/image'
+import {useRouter} from 'next/router'
 
 const Backbutton = () => {
-    const history = useHistory()
+    const router = useRouter()
     return (
-        <div onClick={()=>history.push('/')} className="floating-button">
+        <div onClick={()=>router.push('/')} className="floating-button">
             <Image src={floatBack} alt="" />
         </div>
     )

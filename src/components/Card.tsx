@@ -35,7 +35,7 @@ const Card = ({ doctor }) => {
         <>
             <div className="card"  onClick={openModal} >
                 <div className="img-container">
-                    <img src={doctor.imgSrc} alt="" className="docImg" />
+                    <Image src={doctor.imgSrc} alt="" className="docImg" />
                 </div>
                 <div className="text">
                     <p className="card-title">{ doctor.name}</p>

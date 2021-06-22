@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import '../styles/globals/styles.css'
 import {ModalProvider} from '@contexts/ModalContext'
 import { CurrentDoctorProvider } from '@contexts/DoctorContext'
 
