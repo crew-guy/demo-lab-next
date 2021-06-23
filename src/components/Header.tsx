@@ -13,10 +13,10 @@ export const Header = () => {
                 <div className="farmako-logo-container">
                     <Image src={farmakoLogo} alt="farmako logo" />
                 </div>
-                <p className="lab-initials">
-                    <p className="lab-name">{lab.labName} </p>
-                    <p className="lab-location">{lab.labLocation} </p>
-                </p>
+                <div className="lab-initials">
+                    <div className="lab-name">{lab.labName} </div>
+                    <div className="lab-location">{lab.labLocation} </div>
+                </div>
                 <Carousel
                     
                     showStatus={false}

@@ -12,12 +12,12 @@ const TimingsLayout = () => {
                 Timings
             </div>
             <ul className="timings-list">
-                {timings.map(timing => {
+                {timings.map((timing,i) => {
                     console.log(timing)
                     return (
-                        <li className="day-of-week" >
+                        <li key={i} className="day-of-week" >
                         {timing.name}
-                        <p className="operational-hours" >{`${formatTime(timing.timings[0])}`} - {`${formatTime(timing.timings[1])}`}</p>
+                        <div className="operational-hours" >{`${formatTime(timing.timings[0])}`} - {`${formatTime(timing.timings[1])}`}</p>
                     </li>
                 )})}
             </ul>

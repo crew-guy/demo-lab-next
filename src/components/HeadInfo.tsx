@@ -8,7 +8,7 @@ const HeadInfo = () => {
     return (
         <>
             <div className="test-and-book">
-                <p className="book-appoint">Book tests & appointments</p>
+                <div className="book-appoint">Book tests & appointments</div>
                 <Image
                     src={threeIcons} className="three-icons" alt="more info"
                 />

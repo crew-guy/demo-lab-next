@@ -5,7 +5,6 @@ interface labObj {
     labLocation: string,
     labHeroImages: Array<any>,
     contactNumber: string,
-    coordinates:string,
     labLink:string,
 }
 export const bucketID = "d158ed5e-221c-40cb-af9e-091bf562e660"

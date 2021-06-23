@@ -21,9 +21,9 @@ const Facilities = () => {
                 {services.map((service, i) => {
                     if (i > 1)
                         return
-                    console.log(service,i)
+                    // console.log(service,i)
                     return (
-                        <p>{service.name}</p>
+                        <div>{service.name}</div>
                     )
                 })}
                 <div>

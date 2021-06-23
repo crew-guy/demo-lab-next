@@ -21,7 +21,7 @@ const Section: React.FC<ISection> = ({
         <section>
             <div className="section-heading">
                 <Image src={imgSrc} alt="" className = "section-logo" />
-                <p className="section-title">{title}</p>
+                <div className="section-title">{title}</div>
             </div>
         </section>
     )

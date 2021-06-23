@@ -10,7 +10,6 @@ const Timings = () => (
     <div>
         <Section
             imgSrc={imgSrc}
-            // linkText={"All Timings"}
             title={"Timings (Open Today)"}
         >
         </Section>
@@ -22,8 +21,8 @@ const Timings = () => (
                     }
                     return (
                     <div>
-                        <p className="operational-hours" >{`${formatTime(timing.timings[0])}`} - {`${formatTime(timing.timings[1])}`}</p>
-                        <p className="operational-hours" >{`${formatTime(timing.slotTwoTimings[0])}`} - {`${formatTime(timing.slotTwoTimings[1])}`}</p>
+                        <div className="operational-hours" >{`${formatTime(timing.timings[0])}`} - {`${formatTime(timing.timings[1])}`}</div>
+                        <div className="operational-hours" >{`${formatTime(timing.slotTwoTimings[0])}`} - {`${formatTime(timing.slotTwoTimings[1])}`}</div>
                     </div>
                 )})}
                 <span className="section-cta">

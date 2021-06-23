@@ -29,14 +29,14 @@ const Modal = () => {
                     <img className="doc-img" src={currentDoctor.imgSrc} ></img>
                 </div>
                 <div className="text">
-                    <p className="card-title">{ currentDoctor.name}</p>
-                    <p>{currentDoctor.qualification} </p>
-                    <p>{currentDoctor.speciality}</p>
+                    <div className="card-title">{ currentDoctor.name}</p>
+                    <div>{currentDoctor.qualification} </p>
+                    <div>{currentDoctor.speciality}</p>
                 </div>
             </div>
             <div className="interact">
                 <a href={currentDoctor.consultOnline} className="row">Consult Online</a>
-                <p className="row">
+                <div className="row">
                     <CallButton contactNumber={currentDoctor.phoneNumber} />
                     <WhatsappButton/>
                 </p>

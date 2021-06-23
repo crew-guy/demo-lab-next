@@ -18,7 +18,7 @@ const TimingsLayout = () => {
                     return (
                         <li className="day-of-week" >
                         {timing.name}
-                        <p className="operational-hours" >{`${formatTime(timing.timings[0])}`} - {`${formatTime(timing.timings[1])}`}</p>
+                        <div className="operational-hours" >{`${formatTime(timing.timings[0])}`} - {`${formatTime(timing.timings[1])}`}</p>
                     </li>
                 )})}
             </ul>
