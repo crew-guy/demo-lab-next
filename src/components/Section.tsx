@@ -20,7 +20,7 @@ const Section: React.FC<ISection> = ({
     return (
         <section>
             <div className="section-heading">
-                <Image src={imgSrc} alt="" className = "section-logo" />
+                <Image src={imgSrc} height={10} width={10}  alt="" className = "section-logo" />
                 <div className="section-title">{title}</div>
             </div>
         </section>

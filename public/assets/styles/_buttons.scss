@@ -1,3 +1,7 @@
+.primary-button {
+	cursor: pointer;
+}
+
 .call-button {
 	cursor: pointer;
 	// height: 4rem;
@@ -11,7 +15,7 @@
 
 .three-icons {
 	cursor: pointer;
-	display: none;
+	display: none !important;
 }
 
 .floating-button {

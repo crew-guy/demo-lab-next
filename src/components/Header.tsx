@@ -7,7 +7,7 @@ import Image from 'next/image'
 export const Header = () => {
     return (
         <>
-            <div className="downwards-shadow-gradient" ></div>
+            {/* <div className="downwards-shadow-gradient" ></div> */}
             {/* <div className="upwards-shadow-gradient" ></div> */}
             <div className="carousel-container">
                 <div className="farmako-logo-container">
@@ -30,7 +30,7 @@ export const Header = () => {
                         lab.labHeroImages.map((image, i) => {
                             return (
                             <div key={i} >
-                                <Image layout='fill' src={image} />
+                                <Image blurDataURL={image} placeholder="blur" height={600} width={700} src={image} />
                             </div>
                         )})
                     }

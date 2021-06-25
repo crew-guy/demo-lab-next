@@ -35,20 +35,20 @@ const Card = ({ doctor }) => {
         <>
             <div className="card"  onClick={openModal} >
                 <div className="img-container">
-                    <img src={doctor.imgSrc} alt="" className="docImg" />
+                    <Image src={doctor.imgSrc} alt="" className="docImg" />
                 </div>
                 <div className="text">
                     <div className="card-title">{ doctor.name}</div>
                     <div>{doctor.qualification} </div>
                     <div>{ doctor.speciality}</div>
-                    <p className="consult-doc">
+                    <div className="consult-doc">
                         <span className="call-to-action text" style={{width:"auto"}} >
                             Consult Now
                         </span>
                         <span className="cta-chevron" >
                             <Image src={chevron} />
                         </span>
-                    </p>
+                    </div>
                 </div>
             </div>
         </>

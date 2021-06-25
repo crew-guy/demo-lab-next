@@ -96,6 +96,14 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
+}
+
+.cta-container.right-align {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: red;
 }
 
 .cta {
@@ -176,6 +184,10 @@ section {
   text-decoration: none;
 }
 
+.primary-button {
+  cursor: pointer;
+}
+
 .call-button {
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
@@ -191,7 +203,7 @@ section {
 
 .three-icons {
   cursor: pointer;
-  display: none;
+  display: none !important;
 }
 
 .floating-button {
@@ -227,7 +239,6 @@ section {
   display: flex;
   overflow-x: scroll;
   padding: 1rem 1.5rem;
-  width: 100%;
   margin-left: 0;
   padding-left: 0rem !important;
 }

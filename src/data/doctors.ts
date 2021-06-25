@@ -20,4 +20,22 @@ export const doctors : Array<doctorObj> = [
         whatsappNumber:"+919810414970",
         consultOnline:"https://www.practo.com/gurgaon/doctor/dr-ashasharma-gynecologist-obstetrician-1",
     },
+    {
+        name:"Dr. Yogita Sagar",
+        qualification: "DGO, MBBS",
+        imgSrc:docImage1,
+        speciality:"Obstetrics, Gynaecology",
+        phoneNumber:"+919810414970",
+        whatsappNumber:"+919810414970",
+        consultOnline:"https://www.practo.com/gurgaon/doctor/dr-ashasharma-gynecologist-obstetrician-1",
+    },
+    {
+        name:"Dr. Yogita Sagar",
+        qualification: "DGO, MBBS",
+        imgSrc:docImage1,
+        speciality:"Obstetrics, Gynaecology",
+        phoneNumber:"+919810414970",
+        whatsappNumber:"+919810414970",
+        consultOnline:"https://www.practo.com/gurgaon/doctor/dr-ashasharma-gynecologist-obstetrician-1",
+    },
 ];

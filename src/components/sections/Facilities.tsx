@@ -28,7 +28,7 @@ const Facilities = () => {
                 })}
                 <div>
                     <span>...</span>
-                    <span className="section-cta">
+                    <span className="section-cta right-align">
                         <CallToAction destPath={'/facilities'} linkText={'All facilities'}/>
                     </span>
                 </div>

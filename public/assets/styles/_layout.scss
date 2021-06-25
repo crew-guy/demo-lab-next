@@ -47,6 +47,11 @@ section {
 
 .cta-container {
 	@include flexbox(flex-start, center, row);
+	cursor: pointer;
+	&.right-align {
+		justify-content: flex-end;
+		background: red;
+	}
 }
 
 .cta {
