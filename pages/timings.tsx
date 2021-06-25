@@ -14,13 +14,22 @@ const TimingsLayout = () => {
             </div>
             <ul className="timings-list">
                 {timings.map(timing => {
-                    console.log(timing)
+                    console.log(timing.slotTwoTimings)
+                    if (timing.slotTwoTimings) {
                     return (
                         <li className="day-of-week" >
-                        {timing.name}
-                        <div className="operational-hours" >{`${formatTime(timing.timings[0])}`} - {`${formatTime(timing.timings[1])}`}</p>
-                    </li>
-                )})}
+                            {timing.name}
+                            <p className="operational-hours" >{`${formatTime(timing.timings[0])}`} - {`${formatTime(timing.timings[1])}`}</p>
+                        </li> )
+                    } else {
+                        return (
+                            <li className="day-of-week" >
+                                {timing.name}
+                                <p className="operational-hours" >{`${formatTime(timing.timings[0])}`} - {`${formatTime(timing.timings[1])}`}</p>
+                                <p className="operational-hours" >{`${formatTime(timing.slotTwoTimings[0])}`} - {`${formatTime(timing.slotTwoTimings[1])}`}</p>
+                            </li> )
+                    }
+                })}
             </ul>
             </div>
             <Backbutton/>

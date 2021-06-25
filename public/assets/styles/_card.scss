@@ -1,5 +1,5 @@
 .cards-container {
-	@include flexbox(start, center, row);
+	@include flexbox(flex-start, center, row);
 	overflow-x: scroll;
 	padding: 1rem 1.5rem;
 	width: 100%;
@@ -33,7 +33,7 @@
 		}
 		.text {
 			width: 150px;
-			@include flexbox(center, start, column);
+			@include flexbox(center, flex-start, column);
 			margin-left: 1.4rem;
 			font-size: 1rem;
 			line-height: 26px !important;

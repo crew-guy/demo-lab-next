@@ -23,7 +23,7 @@ const Facilities = () => {
                         return
                     // console.log(service,i)
                     return (
-                        <div>{service.name}</div>
+                        <div key={i} >{service.name}</div>
                     )
                 })}
                 <div>

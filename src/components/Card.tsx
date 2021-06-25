@@ -38,9 +38,9 @@ const Card = ({ doctor }) => {
                     <img src={doctor.imgSrc} alt="" className="docImg" />
                 </div>
                 <div className="text">
-                    <p className="card-title">{ doctor.name}</p>
-                    <p>{doctor.qualification} </p>
-                    <p>{ doctor.speciality}</p>
+                    <div className="card-title">{ doctor.name}</div>
+                    <div>{doctor.qualification} </div>
+                    <div>{ doctor.speciality}</div>
                     <p className="consult-doc">
                         <span className="call-to-action text" style={{width:"auto"}} >
                             Consult Now

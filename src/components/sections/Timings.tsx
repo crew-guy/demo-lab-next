@@ -20,9 +20,13 @@ const Timings = () => (
                         return
                     }
                     return (
-                    <div>
-                        <div className="operational-hours" >{`${formatTime(timing.timings[0])}`} - {`${formatTime(timing.timings[1])}`}</div>
-                        <div className="operational-hours" >{`${formatTime(timing.slotTwoTimings[0])}`} - {`${formatTime(timing.slotTwoTimings[1])}`}</div>
+                    <div key={i} >
+                            <div className="operational-hours" >
+                                {`${formatTime(timing.timings[0])}`} - {`${formatTime(timing.timings[1])}`}
+                                </div>
+                            <div className="operational-hours" >
+                                {`${formatTime(timing.slotTwoTimings[0])}`} - {`${formatTime(timing.slotTwoTimings[1])}`}
+                            </div>
                     </div>
                 )})}
                 <span className="section-cta">

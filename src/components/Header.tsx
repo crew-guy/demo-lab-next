@@ -1,5 +1,5 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import farmakoLogo from '@assets/images/farmako-logo.svg'
+import farmakoLogo from '@images/farmako-logo.svg'
 import { Carousel } from 'react-responsive-carousel';
 import { lab } from '@data/lab'
 import Image from 'next/image'
@@ -18,7 +18,6 @@ export const Header = () => {
                     <div className="lab-location">{lab.labLocation} </div>
                 </div>
                 <Carousel
-                    
                     showStatus={false}
                     showThumbs={false}
                     swipeable={true}
@@ -29,7 +28,6 @@ export const Header = () => {
                     >
                     {
                         lab.labHeroImages.map((image, i) => {
-                            console.log(image)
                             return (
                             <div key={i} >
                                 <Image layout='fill' src={image} />
