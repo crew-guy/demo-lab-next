@@ -10,6 +10,10 @@
 	padding: 1.4rem;
 }
 
+.head-info-box {
+	margin-left: 1rem;
+}
+
 .test-and-book {
 	display: flex;
 	width: 100%;
@@ -37,6 +41,10 @@ section {
 	height: 1.2rem;
 	width: 1.2rem;
 	margin-right: 0.5rem;
+}
+
+.section-body {
+	margin-left: 2rem;
 }
 
 .section-title {
@@ -75,7 +83,6 @@ section {
 }
 
 .section-row {
-	margin-left: 1.9rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;

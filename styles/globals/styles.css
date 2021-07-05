@@ -38,6 +38,10 @@
   padding: 1.4rem;
 }
 
+.head-info-box {
+  margin-left: 1rem;
+}
+
 .test-and-book {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,6 +78,10 @@ section {
   height: 1.2rem;
   width: 1.2rem;
   margin-right: 0.5rem;
+}
+
+.section-body {
+  margin-left: 2rem;
 }
 
 .section-title {
@@ -145,7 +153,6 @@ section {
 }
 
 .section-row {
-  margin-left: 1.9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,7 +264,7 @@ section {
           box-shadow: 0 2px 2px 2px rgba(48, 48, 68, 0.3);
   padding: 1rem;
   padding-right: 0.3rem;
-  min-height: 9rem;
+  min-width: 350px;
   z-index: 3;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -566,6 +573,28 @@ section {
 
 .carousel-container .farmako-logo-container img {
   height: 1.3rem;
+}
+
+.map-container {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 1.5rem;
+}
+
+.map-container div {
+  width: 100%;
 }
 
 * {

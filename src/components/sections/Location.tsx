@@ -1,9 +1,9 @@
-import React from 'react'
+import React,{useCallback, useState} from 'react'
 import { GoogleMap, useJsApiLoader,Marker } from '@react-google-maps/api';
 import Link from 'next/link'
 
 const containerStyle = {
-  width: '400px',
+  width: '600px',
   height: '400px'
 };
 
@@ -20,19 +20,19 @@ function Location() {
     region: "IN"
   })
 
-  const [map, setMap] = React.useState(null)
+  const [map, setMap] = useState(null)
 
-  const onLoad = React.useCallback(function callback(map) {
+  const onLoad = useCallback(function callback(map) {
     const bounds = new window.google.maps.LatLngBounds();
     map.fitBounds(bounds);
     setMap(map)
   }, [])
 
-  const onUnmount = React.useCallback(function callback(map) {
+  const onUnmount = useCallback(function callback(map) {
     setMap(null)
   }, [])
 
-    return isLoaded ? (
+    return isLoaded && (
     <div className="map-container">
       <Link href="http://maps.google.com/maps?q=28.6184,77.3738">
         <GoogleMap
@@ -47,7 +47,7 @@ function Location() {
         </GoogleMap>
     </Link>
     </div>
-  ) : <></>
+  )
 }
 
 export default Location

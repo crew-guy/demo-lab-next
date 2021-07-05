@@ -23,7 +23,7 @@
         "./src/components/*"
       ],
       "@contexts/*": [
-        "src/contexts/*"
+        "./src/contexts/*"
       ],
       "@data/*": [
         "./src/data/*"

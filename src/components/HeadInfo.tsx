@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const HeadInfo = () => {
     return (
-        <>
+        <div className="head-info-box">
             <div className="test-and-book">
                 <div className="book-appoint">Book tests & appointments</div>
                 <Image
@@ -14,7 +14,7 @@ const HeadInfo = () => {
                 />
             </div>
             <CallButton contactNumber={lab.contactNumber}/>
-        </>
+        </div>
     )
 }
 

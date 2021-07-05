@@ -1,0 +1,10 @@
+@import './flexbox';
+
+.map-container {
+	width: 100%;
+	@include flexbox(center, center, row);
+	padding: 1rem 1.5rem;
+	div {
+		width: 100%;
+	}
+}

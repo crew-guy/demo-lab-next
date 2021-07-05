@@ -14,11 +14,10 @@
 		margin-right: 0.9rem;
 		margin-left: 0.2rem;
 		cursor: pointer;
-		// width: 700px !important;
 		box-shadow: 0 2px 2px 2px rgba(48, 48, 68, 0.3);
 		padding: 1rem;
 		padding-right: 0.3rem;
-		min-height: 9rem;
+		min-width: 350px;
 		z-index: 3;
 		@include flexbox(center, center, row);
 		.img-container {

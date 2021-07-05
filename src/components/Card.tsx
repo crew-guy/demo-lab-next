@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useEffect} from 'react'
 import chevron from '@assets/images/chevron.svg'
 // import Modal from './Modal'
 import {useCurrentDoctor} from '@contexts/DoctorContext'
@@ -15,21 +15,26 @@ interface Props{
     consultOnline:string
 }
 
-// const Card : React.FC<Props> = (doctor) => {
 const Card = ({ doctor }) => {
     const {currentDoctor, setCurrentDoctor} = useCurrentDoctor() 
     const { modalIsOpen, setModalIsOpen } = useModal()
 
-    const openModal = () => {
+
+    const openModal =() => {
+        console.log(modalIsOpen)
         setModalIsOpen(true)
+        console.log({currentDoctor, modalIsOpen})
         setCurrentDoctor(doctor)
         document.body.classList.add('unfocus')
         window.scrollTo({
             top: 0,
             behavior: "smooth"
           });
-  
     }
+
+    useEffect(() => {
+        console.log(currentDoctor, modalIsOpen)
+    },[currentDoctor, modalIsOpen])
 
     return (
         <>
