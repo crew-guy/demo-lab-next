@@ -2,5 +2,5 @@
 module.exports = {
     images: {
       domains: ['cdn.farmako.in'],
-    },
   }
+}

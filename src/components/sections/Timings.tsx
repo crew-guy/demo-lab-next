@@ -28,11 +28,14 @@ const Timings = () => (
                                 {`${formatTime(timing.slotTwoTimings[0])}`} - {`${formatTime(timing.slotTwoTimings[1])}`}
                             </div>
                     </div>
-                )})}
-                <span className="section-cta">
-                    <CallToAction destPath={'/timings'} linkText={'All timings'}/>
-                </span>
-            </div>
+                    )
+                })}
+                <div style={{display:"flex", justifyContent:"space-between"}}>
+                    <span className="section-cta">
+                        <CallToAction destPath={'/timings'} linkText={'All timings'}/>
+                    </span>
+                </div>
+            </div>  
         </div>
     </div>
 )

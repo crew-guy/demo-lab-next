@@ -1,5 +1,5 @@
 import React from 'react'
-import whatsappButton from '../assets/images/whatsapp-button.svg'
+import whatsappButton from '@images/whatsapp-button.png'
 import Image from 'next/image'
 
 const WhatsappButton = () => {

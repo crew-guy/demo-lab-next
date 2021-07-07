@@ -22,15 +22,15 @@ function Location() {
 
   const [map, setMap] = useState(null)
 
-  const onLoad = useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds();
-    map.fitBounds(bounds);
-    setMap(map)
-  }, [])
+  // const onLoad = useCallback(function callback(map) {
+  //   const bounds = new window.google.maps.LatLngBounds();
+  //   map.fitBounds(bounds);
+  //   setMap(map)
+  // }, [])
 
-  const onUnmount = useCallback(function callback(map) {
-    setMap(null)
-  }, [])
+  // const onUnmount = useCallback(function callback(map) {
+  //   setMap(null)
+  // }, [])
 
     return isLoaded && (
     <div className="map-container">
@@ -39,9 +39,9 @@ function Location() {
             mapContainerStyle={containerStyle}
             center={center}
             zoom={17}
-            // mapId:"8e0a97af9386fef",
-            onLoad={onLoad}
-            onUnmount={onUnmount}
+            // mapId:"8e0a97af9386fef"
+            // onLoad={onLoad}
+            // onUnmount={onUnmount}
             >
             <Marker position={ center } />
         </GoogleMap>

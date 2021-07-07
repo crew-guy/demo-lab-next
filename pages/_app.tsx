@@ -4,6 +4,7 @@ import { CurrentDoctorProvider } from '@contexts/DoctorContext'
 import { Header } from '../src/components/Header'
 
 function MyApp({ Component, pageProps }) {
+
   return (
     <ModalProvider>
       <CurrentDoctorProvider>

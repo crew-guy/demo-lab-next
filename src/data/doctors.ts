@@ -21,7 +21,7 @@ export const doctors : Array<doctorObj> = [
         consultOnline:"https://www.practo.com/gurgaon/doctor/dr-ashasharma-gynecologist-obstetrician-1",
     },
     {
-        name:"Dr. Yogita Sagar",
+        name:"Dr. Jogita Sagar",
         qualification: "DGO, MBBS",
         imgSrc:docImage1,
         speciality:"Obstetrics, Gynaecology",
@@ -30,7 +30,7 @@ export const doctors : Array<doctorObj> = [
         consultOnline:"https://www.practo.com/gurgaon/doctor/dr-ashasharma-gynecologist-obstetrician-1",
     },
     {
-        name:"Dr. Yogita Sagar",
+        name:"Dr. Rogita Sagar",
         qualification: "DGO, MBBS",
         imgSrc:docImage1,
         speciality:"Obstetrics, Gynaecology",
@@ -39,7 +39,7 @@ export const doctors : Array<doctorObj> = [
         consultOnline:"https://www.practo.com/gurgaon/doctor/dr-ashasharma-gynecologist-obstetrician-1",
     },
     {
-        name:"Dr. Yogita Sagar",
+        name:"Dr. Sogita Sagar",
         qualification: "DGO, MBBS",
         imgSrc:docImage1,
         speciality:"Obstetrics, Gynaecology",
@@ -48,7 +48,7 @@ export const doctors : Array<doctorObj> = [
         consultOnline:"https://www.practo.com/gurgaon/doctor/dr-ashasharma-gynecologist-obstetrician-1",
     },
     {
-        name:"Dr. Yogita Sagar",
+        name:"Dr. Dogita Sagar",
         qualification: "DGO, MBBS",
         imgSrc:docImage1,
         speciality:"Obstetrics, Gynaecology",

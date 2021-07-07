@@ -1,6 +1,5 @@
 import React,{useEffect} from 'react'
-import chevron from '@assets/images/chevron.svg'
-// import Modal from './Modal'
+import chevron from '@assets/images/chevron.png'
 import {useCurrentDoctor} from '@contexts/DoctorContext'
 import { useModal } from '@contexts/ModalContext'
 import Image from 'next/image'
@@ -21,9 +20,7 @@ const Card = ({ doctor }) => {
 
 
     const openModal =() => {
-        console.log(modalIsOpen)
         setModalIsOpen(true)
-        console.log({currentDoctor, modalIsOpen})
         setCurrentDoctor(doctor)
         document.body.classList.add('unfocus')
         window.scrollTo({

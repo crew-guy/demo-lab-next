@@ -9,16 +9,16 @@ import Image from 'next/image'
 const Modal = () => {
     const { currentDoctor,setCurrentDoctor } = useCurrentDoctor()
     const { modalIsOpen, setModalIsOpen } = useModal()
-    console.log(currentDoctor)
+    // console.log(currentDoctor)
 
     return (
     <div className="modal-container">
         <div className="modal">
                 <button className="cross-button" onClick={
                     () => {
-                        console.log('I was clicked')
+                        // console.log('I was clicked')
                         setModalIsOpen(false)
-                        console.log(modalIsOpen)
+                        // console.log(modalIsOpen)
                         document.body.classList.remove('unfocus')
                     }
                 } >

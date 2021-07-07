@@ -26,10 +26,10 @@ const Facilities = () => {
                         <div key={i} >{service.name}</div>
                     )
                 })}
-                <div>
+                <div style={{display:"flex", justifyContent:"space-between"}}>
                     <span>...</span>
                     <span className="section-cta right-align">
-                        <CallToAction destPath={'/facilities'} linkText={'All facilities'}/>
+                        <CallToAction destPath={'/services'} linkText={'All facilities'}/>
                     </span>
                 </div>
             </div>
