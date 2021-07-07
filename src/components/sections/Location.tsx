@@ -39,7 +39,7 @@ function Location() {
             mapContainerStyle={containerStyle}
             center={center}
             zoom={17}
-            // mapId:"8e0a97af9386fef"
+            // mapId:d
             // onLoad={onLoad}
             // onUnmount={onUnmount}
             >
