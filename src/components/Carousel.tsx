@@ -1,17 +1,27 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import farmakoLogo from '@images/farmako-logo.svg'
+// import farmakoLogo from '@images/farmako-logo.svg'
+import FarmakoLogo from '@images/farmako-logo.svg'
+import {useEffect, useState} from 'react'
 import { Carousel } from 'react-responsive-carousel';
 import { lab } from '@data/lab'
 import Image from 'next/image'
 
-export const Header = () => {
+export const CarouselContainer = () => {
+    const [width, setWidth] = useState(100)
+    
+    useEffect( async () =>
+    {
+        await setWidth(window.innerWidth)
+    }, [])
+
     return (
-        <>
-            {/* <div className="downwards-shadow-gradient" ></div> */}
+        <div className="carousel-wrapper">
+            <div className="downwards-shadow-gradient" ></div>
             {/* <div className="upwards-shadow-gradient" ></div> */}
             <div className="carousel-container">
                 <div className="farmako-logo-container">
-                    <Image src={farmakoLogo} alt="farmako logo" />
+                    {/* <Image src={farmakoLogo} alt="farmako logo" /> */}
+                    <FarmakoLogo/>
                 </div>
                 <div className="lab-initials">
                     <div className="lab-name">{lab.labName} </div>
@@ -30,12 +40,12 @@ export const Header = () => {
                         lab.labHeroImages.map((image, i) => {
                             return (
                             <div key={i} >
-                                <Image blurDataURL={image} placeholder="blur" height={600} width={700} src={image} />
+                                <Image blurDataURL={image} placeholder="blur" height={0.75*width} width={width} src={image} />
                             </div>
                         )})
                     }
                 </Carousel>
             </div>
-        </>
+        </div>
     );
 }

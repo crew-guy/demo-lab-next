@@ -103,6 +103,14 @@ section {
 }
 
 // Map image
-.map-img img {
-	width: 100%;
+// .map-img img {
+// 	width: 100%;
+// }
+
+.location {
+	margin-bottom: 3rem;
+}
+
+.blurred {
+	filter: blur(0.3rem) grayscale(40%);
 }

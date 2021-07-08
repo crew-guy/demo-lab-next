@@ -1,5 +1,3 @@
-// import labBgImage from '../assets/images/shri-krishna-bg.jpg'
-
 interface labObj {
     labName: string,
     labLocation: string,

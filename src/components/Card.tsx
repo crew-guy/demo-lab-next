@@ -1,8 +1,10 @@
 import React,{useEffect} from 'react'
-import chevron from '@assets/images/chevron.png'
+import Chevron from '@assets/images/chevron.svg'
 import {useCurrentDoctor} from '@contexts/DoctorContext'
 import { useModal } from '@contexts/ModalContext'
 import Image from 'next/image'
+import Section from '@components/Section'
+import imgSrc from '@assets/images/like-icon.svg'
 
 interface Props{
     name: string,
@@ -18,11 +20,14 @@ const Card = ({ doctor }) => {
     const {currentDoctor, setCurrentDoctor} = useCurrentDoctor() 
     const { modalIsOpen, setModalIsOpen } = useModal()
 
+    console.log(doctor.imgSrc)
 
     const openModal =() => {
         setModalIsOpen(true)
         setCurrentDoctor(doctor)
         document.body.classList.add('unfocus')
+        document.querySelector('.layout-container').classList.add('blurred')
+        document.querySelector('.carousel-wrapper').classList.add('blurred')
         window.scrollTo({
             top: 0,
             behavior: "smooth"
@@ -30,14 +35,13 @@ const Card = ({ doctor }) => {
     }
 
     useEffect(() => {
-        console.log(currentDoctor, modalIsOpen)
     },[currentDoctor, modalIsOpen])
 
     return (
         <>
             <div className="card"  onClick={openModal} >
                 <div className="img-container">
-                    <Image src={doctor.imgSrc} alt="" className="docImg" />
+                    <Image width={70} height={70} src={doctor.imgSrc} alt="" className="docImg" />
                 </div>
                 <div className="text">
                     <div className="card-title">{ doctor.name}</div>
@@ -48,7 +52,8 @@ const Card = ({ doctor }) => {
                             Consult Now
                         </span>
                         <span className="cta-chevron" >
-                            <Image src={chevron} />
+                            {/* <Image src={chevron} /> */}
+                            <Chevron/>
                         </span>
                     </div>
                 </div>

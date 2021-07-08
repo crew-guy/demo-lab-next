@@ -1,53 +1,39 @@
-import React,{useCallback, useState} from 'react'
-import { GoogleMap, useJsApiLoader,Marker } from '@react-google-maps/api';
-import Link from 'next/link'
+import imgSrc from '@assets/images/like-icon.svg'
+import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import mapStyle from "@components/GoogleMapsStyle";
+import Section from '@components/Section'
 
 const containerStyle = {
-  width: '600px',
-  height: '400px'
-};
-
-const center = {
-  lat: 28.6184,
-  lng: 77.3738
-};
-
-function Location() {
-  const { isLoaded } = useJsApiLoader({
-    id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyBfpx4ARryAr9g2L9_kVvD-xmURtdJeZ5E",
-    mapIds: ["6eb5782d68434f23"],
-    region: "IN"
-  })
-
-  const [map, setMap] = useState(null)
-
-  // const onLoad = useCallback(function callback(map) {
-  //   const bounds = new window.google.maps.LatLngBounds();
-  //   map.fitBounds(bounds);
-  //   setMap(map)
-  // }, [])
-
-  // const onUnmount = useCallback(function callback(map) {
-  //   setMap(null)
-  // }, [])
-
-    return isLoaded && (
-    <div className="map-container">
-      <Link href="http://maps.google.com/maps?q=28.6184,77.3738">
-        <GoogleMap
-            mapContainerStyle={containerStyle}
-            center={center}
-            zoom={17}
-            // mapId:d
-            // onLoad={onLoad}
-            // onUnmount={onUnmount}
-            >
-            <Marker position={ center } />
-        </GoogleMap>
-    </Link>
-    </div>
-  )
+  width: '85%',
+  height: '50%'
 }
 
-export default Location
+const Location = (props) => {
+  return (
+    <div className="location">
+      <Section
+                imgSrc={imgSrc}
+                // linkText={"All Timings"}
+                title={"Location"}
+                >
+            </Section>
+        <div className="map-container">
+        <Map
+            google={props.google}
+            zoom={13}
+            containerStyle={containerStyle}
+            styles={props.mapStyle}
+            initialCenter={{ lat: 28.6184,lng: 77.3738 }}
+          >
+            <Marker position={{ lat: 28.6184,lng: 77.3738 }} />
+        </Map>
+        </div>
+      </div>
+    );
+}
+
+Location.defaultProps = mapStyle;
+
+export default GoogleApiWrapper({
+  apiKey: "AIzaSyBfpx4ARryAr9g2L9_kVvD-xmURtdJeZ5E",
+})(Location);

@@ -1,10 +1,12 @@
 import React from 'react'
 import CallButton from '@components/CallButton'
 import WhatsappButton from '@components/WhatsappButton'
-import cross from '@assets/images/cross.svg'
+// import cross from '@assets/images/cross.svg'
+import Cross from '@assets/images/cross.svg'
 import {useCurrentDoctor} from '@contexts/DoctorContext'
 import { useModal } from '@contexts/ModalContext'
 import Image from 'next/image'
+import {motion} from 'framer-motion'
 
 const Modal = () => {
     const { currentDoctor,setCurrentDoctor } = useCurrentDoctor()
@@ -13,20 +15,26 @@ const Modal = () => {
 
     return (
     <div className="modal-container">
-        <div className="modal">
+        <div className="blur-layer"></div>
+            <div
+                className="modal"
+            >
                 <button className="cross-button" onClick={
                     () => {
                         // console.log('I was clicked')
                         setModalIsOpen(false)
                         // console.log(modalIsOpen)
                         document.body.classList.remove('unfocus')
+                        document.querySelector('.layout-container').classList.remove('blurred')
+                        document.querySelector('.carousel-wrapper').classList.remove('blurred')
                     }
                 } >
-                <Image src={cross} alt="close modal" />
+                {/* <Image src={cross} alt="close modal" /> */}
+                <Cross/>
             </button>
             <div className="doc-info">
                 <div className="img-cnr">
-                    <img className="doc-img" src={currentDoctor.imgSrc} ></img>
+                    <Image width={140} height={140} src={currentDoctor.imgSrc} className="doc-img"  />
                 </div>
                 <div className="text">
                     <p className="card-title">{ currentDoctor.name}</p> 
@@ -38,6 +46,7 @@ const Modal = () => {
                 <a href={currentDoctor.consultOnline} className="row">Consult Online</a>
                 <p className="row">
                     <CallButton contactNumber={currentDoctor.phoneNumber} />
+                    <p>or</p>
                     <WhatsappButton/>
                 </p>
             </div>

@@ -11,7 +11,7 @@ const Doctors = () => {
         <div>
             <Section
                 imgSrc={imgSrc}
-                title={"Doctors and Pathologists"}
+                title={process.env.INSTI_TYPE=="lab" ?  "Doctors and Pathologists" : "Doctors" }
             >
             </Section>
                 <div className="section-body cards-container">

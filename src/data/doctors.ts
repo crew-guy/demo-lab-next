@@ -1,4 +1,3 @@
-import docImage1 from '@assets/images/doc-image.png'
 
 interface doctorObj {
     name: string,
@@ -14,7 +13,7 @@ export const doctors : Array<doctorObj> = [
     {
         name:"Dr. Yogita Sagar",
         qualification: "DGO, MBBS",
-        imgSrc:docImage1,
+        imgSrc:"https://randomuser.me/api/portraits/men/92.jpg",
         speciality:"Obstetrics, Gynaecology",
         phoneNumber:"+919810414970",
         whatsappNumber:"+919810414970",
@@ -23,7 +22,7 @@ export const doctors : Array<doctorObj> = [
     {
         name:"Dr. Jogita Sagar",
         qualification: "DGO, MBBS",
-        imgSrc:docImage1,
+        imgSrc:"https://randomuser.me/api/portraits/men/92.jpg",
         speciality:"Obstetrics, Gynaecology",
         phoneNumber:"+919810414970",
         whatsappNumber:"+919810414970",
@@ -32,7 +31,7 @@ export const doctors : Array<doctorObj> = [
     {
         name:"Dr. Rogita Sagar",
         qualification: "DGO, MBBS",
-        imgSrc:docImage1,
+        imgSrc:"https://randomuser.me/api/portraits/men/92.jpg",
         speciality:"Obstetrics, Gynaecology",
         phoneNumber:"+919810414970",
         whatsappNumber:"+919810414970",
@@ -41,28 +40,10 @@ export const doctors : Array<doctorObj> = [
     {
         name:"Dr. Sogita Sagar",
         qualification: "DGO, MBBS",
-        imgSrc:docImage1,
+        imgSrc:"https://randomuser.me/api/portraits/men/92.jpg",
         speciality:"Obstetrics, Gynaecology",
         phoneNumber:"+919810414970",
         whatsappNumber:"+919810414970",
         consultOnline:"https://www.practo.com/gurgaon/doctor/dr-ashasharma-gynecologist-obstetrician-1",
-    },
-    {
-        name:"Dr. Dogita Sagar",
-        qualification: "DGO, MBBS",
-        imgSrc:docImage1,
-        speciality:"Obstetrics, Gynaecology",
-        phoneNumber:"+919810414970",
-        whatsappNumber:"+919810414970",
-        consultOnline:"https://www.practo.com/gurgaon/doctor/dr-ashasharma-gynecologist-obstetrician-1",
-    },
-    {
-        name:"Dr. Yogita Sagar",
-        qualification: "DGO, MBBS",
-        imgSrc:docImage1,
-        speciality:"Obstetrics, Gynaecology",
-        phoneNumber:"+919810414970",
-        whatsappNumber:"+919810414970",
-        consultOnline:"https://www.practo.com/gurgaon/doctor/dr-ashasharma-gynecologist-obstetrician-1",
-    },
+    }
 ];

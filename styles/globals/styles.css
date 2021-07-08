@@ -177,8 +177,13 @@ section {
   font-family: 'Avenir 1';
 }
 
-.map-img img {
-  width: 100%;
+.location {
+  margin-bottom: 3rem;
+}
+
+.blurred {
+  -webkit-filter: blur(0.3rem) grayscale(40%);
+          filter: blur(0.3rem) grayscale(40%);
 }
 
 .layout-heading {
@@ -367,6 +372,17 @@ section {
           align-items: center;
 }
 
+.blur-layer {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-filter: blur(0.3rem);
+          filter: blur(0.3rem);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .modal {
   width: 400px;
   position: absolute;
@@ -375,7 +391,7 @@ section {
           filter: blur(0);
   background: #fff;
   border-radius: 1rem;
-  top: 30%;
+  top: 25%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -430,6 +446,7 @@ section {
   display: flex;
   margin-bottom: 0;
   padding-bottom: 0;
+  position: relative;
 }
 
 .modal .doc-info .img-cnr {
@@ -442,15 +459,15 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  left: -4%;
+  top: -40%;
 }
 
 .modal .doc-info .img-cnr .doc-img {
   position: relative;
-  height: 8rem;
-  width: 8rem;
-  top: -60%;
   border-radius: 50%;
-  left: -8%;
+  top: -40%;
 }
 
 .modal .doc-info .text {
@@ -484,9 +501,8 @@ section {
 .modal .interact .row {
   width: 100%;
   text-decoration: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -577,24 +593,7 @@ section {
 
 .map-container {
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 1rem 1.5rem;
-}
-
-.map-container div {
-  width: 100%;
 }
 
 * {

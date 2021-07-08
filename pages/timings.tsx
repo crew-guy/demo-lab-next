@@ -1,5 +1,4 @@
 import React from 'react'
-import floatBack from '../../assets/images/float-back.svg'
 import { timings } from '@data/timings';
 import Backbutton from '@components/Backbutton';
 import moment from 'moment'
@@ -14,7 +13,6 @@ const TimingsLayout = () => {
             </div>
             <ul className="timings-list">
                 {timings.map(timing => {
-                    console.log(timing.slotTwoTimings)
                     if (timing.slotTwoTimings) {
                     return (
                         <li className="day-of-week" >
