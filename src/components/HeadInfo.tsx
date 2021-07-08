@@ -10,7 +10,7 @@ const HeadInfo = () => {
         <div className="head-info-box">
             <div className="test-and-book">
                 <div className="book-appoint">
-                    {process.env.INSTI_TYPE=="lab" ?  "Book tests & appointments" : "Book tests" }
+                    {process.env.INSTI_TYPE=="lab" ?  "Book tests & appointments" : "Book appointments" }
                 </div>
                 {/* <Image
                     src={threeIcons} className="three-icons" alt="more info"

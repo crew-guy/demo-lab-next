@@ -1,4 +1,4 @@
-import imgSrc from '@assets/images/like-icon.svg'
+import imgSrc from '@assets/images/location-icon.svg'
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import mapStyle from "@components/GoogleMapsStyle";
 import Section from '@components/Section'

@@ -49,8 +49,21 @@ section {
 
 .section-title {
 	font-size: 1.1rem;
-	margin-left: 0.6rem;
+	position: relative;
+	top: -5%;
 	font-family: 'Avenir 3';
+}
+
+.heading-icon {
+	position: relative;
+	left: 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	path {
+		height: 100%;
+		width: 100%;
+	}
 }
 
 .cta-container {

@@ -14,7 +14,7 @@ const Facilities = () => {
             <Section
                 imgSrc={imgSrc}
                 // linkText={"All Timings"}
-                title={"Facilities & Tests"}
+                title={process.env.INSTI_TYPE=="lab" ?  "Facilities and tests" : "Facilities" }
                 >
             </Section>
             <div className="section-body">
