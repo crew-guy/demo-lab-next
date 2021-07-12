@@ -4,7 +4,6 @@ import {metadata, rootWord, capitalizedRootWord} from '@data/meta'
 const Meta = () => {
   return (
     <Head>
-      {/* <meta charset="utf-8"/> */}
       <link rel="icon" href="https://cdn.farmako.in/favicon.ico"/>
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <meta

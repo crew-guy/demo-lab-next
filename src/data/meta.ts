@@ -1,3 +1,6 @@
+// THE ONLY VARIABLE I GOTTA CHANGE OUT HERE
+const instiName = "Molxpert Diagnostics"
+
 import { bucketID } from "./lab";
 
 interface Metadata {
@@ -9,7 +12,6 @@ interface Metadata {
 export const rootWord = process.env.INSTI_TYPE === "lab" ? "lab" : "clinic"
 export const capitalizedRootWord = rootWord.charAt(0).toUpperCase() + rootWord.slice(1);
 
-const instiName = "Molxpert Diagnostics"
 
 export const metadata: Metadata = {
     title: `${instiName} | Smart and Digital ${capitalizedRootWord}}`,
