@@ -2,6 +2,7 @@ import '../styles/globals/styles.css'
 import {ModalProvider} from '@contexts/ModalContext'
 import { CurrentDoctorProvider } from '@contexts/DoctorContext'
 import { CarouselContainer } from '../src/components/Carousel'
+// import {AnimateSharedLayout,AnimatePresence} from 'framer-motion'
 
 function MyApp({ Component, pageProps }) {
 
@@ -9,8 +10,12 @@ function MyApp({ Component, pageProps }) {
   return (
     <ModalProvider>
       <CurrentDoctorProvider>
-        <CarouselContainer/>
-        <Component {...pageProps} />
+        <CarouselContainer />
+        {/* <AnimateSharedLayout>
+          <AnimatePresence exitBeforeEnter> */}
+            <Component {...pageProps} />
+          {/* </AnimatePresence>
+        </AnimateSharedLayout> */}
       </CurrentDoctorProvider>
     </ModalProvider>
   )

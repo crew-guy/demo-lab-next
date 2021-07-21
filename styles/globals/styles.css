@@ -28,14 +28,14 @@
   src: url("@fonts/AvenirNextLTPro-BoldCn.otf");
 }
 
-.services-list {
-  margin-left: 2rem;
-  line-height: 2rem;
-  font-size: 1.1rem;
+.layout-container {
+  margin: 1rem;
 }
 
-.layout-container {
-  padding: 1.4rem;
+.services-list {
+  margin-left: 1.3rem;
+  line-height: 2rem;
+  font-size: 1.1rem;
 }
 
 .head-info-box {
@@ -78,6 +78,19 @@ section {
   height: 1.2rem;
   width: 1.2rem;
   margin-right: 0.5rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: center;
+          flex-direction: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .section-body {
@@ -86,23 +99,27 @@ section {
 
 .section-title {
   font-size: 1.1rem;
-  position: relative;
-  top: -5%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: center;
+          flex-direction: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: 'Avenir 3';
 }
 
 .heading-icon {
   position: relative;
   left: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-transform: translateY(8.5px);
+          transform: translateY(8.5px);
 }
 
 .heading-icon path {
@@ -195,6 +212,14 @@ section {
   font-size: 1rem;
   font-weight: lighter;
   font-family: 'Avenir 1';
+}
+
+.timings-list {
+  margin-left: 1.4rem;
+}
+
+.map-img img {
+  width: 100%;
 }
 
 .location {
@@ -613,7 +638,6 @@ section {
 
 .map-container {
   width: 100%;
-  padding: 1rem 1.5rem;
 }
 
 * {

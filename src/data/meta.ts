@@ -1,12 +1,9 @@
-// THE ONLY VARIABLE I GOTTA CHANGE OUT HERE
-const instiName = "Molxpert Diagnostics"
-
-import { bucketID } from "./lab";
+import { bucketID, lab, objectFunction } from "./lab";
 
 interface Metadata {
     title: string,
     content: string,
-    image: string,
+    image: any,
 }
 
 export const rootWord = process.env.INSTI_TYPE === "lab" ? "lab" : "clinic"
@@ -14,7 +11,7 @@ export const capitalizedRootWord = rootWord.charAt(0).toUpperCase() + rootWord.s
 
 
 export const metadata: Metadata = {
-    title: `${instiName} | Smart and Digital ${capitalizedRootWord}}`,
+    title: `${lab.labName} | Smart and Digital ${capitalizedRootWord}}`,
     content: `This institute is a smart and digital ${rootWord} of new India. If you visit this institute, you will get all your medical records on your phone.`,
-    image:`https://cdn.farmako.in/labs/${bucketID}/1.png`
+    image:objectFunction("1.png")
 }

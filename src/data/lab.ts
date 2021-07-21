@@ -4,18 +4,23 @@ interface labObj {
     labHeroImages: Array<any>,
     contactNumber: string,
     labLink:string,
+    labMapImage:string,
 }
-export const bucketID = "d158ed5e-221c-40cb-af9e-091bf562e660"
+export const bucketID = "edfd61d0-03c6-4955-bba0-959e15735fd1"
+export const objectFunction = (string:String):String => {
+    return `https://cdn.farmako.in/labs/${bucketID}/${string}`
+}
 
 export const lab : labObj = {
-    labName: "Healius Well Women Clinic",
+    labName: "Aashirwad Diagnostics",
     labHeroImages: [
-        `https://cdn.farmako.in/labs/${bucketID}/1.png`,
-        `https://cdn.farmako.in/labs/${bucketID}/2.png`,
-        `https://cdn.farmako.in/labs/${bucketID}/3.png`,
-        `https://cdn.farmako.in/labs/${bucketID}/4.png`,
+        objectFunction('1.png'),
+        objectFunction('2.png'),
+        objectFunction('3.png'),
     ],
     contactNumber: "+919810414970",
     labLocation: "Gurgaon Sector 52, Gurgaon",
-    labLink : "http://maps.google.com/maps?q=28.6184,77.3738"
+    labLink: "http://maps.google.com/maps?q=28.6184,77.3738",
+    labMapImage:`https://cdn.farmako.in/labs/${bucketID}/map.png`
 }
+

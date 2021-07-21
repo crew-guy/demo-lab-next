@@ -10,7 +10,7 @@ interface servicesObj {
 
 const ServicesLayout = () => {
     return (
-        <>
+        <div className="layout-container">
             <div className="layout-heading">
                 Services
             </div>
@@ -22,7 +22,7 @@ const ServicesLayout = () => {
                 }
             </ul>
             <Backbutton/>
-        </>
+        </div>
     )
 }
 

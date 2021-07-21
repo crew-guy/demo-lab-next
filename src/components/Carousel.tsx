@@ -8,6 +8,7 @@ import Image from 'next/image'
 
 export const CarouselContainer = () => {
     const [width, setWidth] = useState(100)
+    const scale = 0.5668
     
     useEffect( async () =>
     {
@@ -40,7 +41,7 @@ export const CarouselContainer = () => {
                         lab.labHeroImages.map((image, i) => {
                             return (
                             <div key={i} >
-                                <Image blurDataURL={image} placeholder="blur" height={0.75*width} width={width} src={image} />
+                                <Image blurDataURL={image} placeholder="blur" height={scale*width} width={width} src={image} />
                             </div>
                         )})
                     }

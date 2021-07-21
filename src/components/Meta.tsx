@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import {metadata, rootWord, capitalizedRootWord} from '@data/meta'
+import {metadata} from '@data/meta'
 
 const Meta = () => {
   return (
