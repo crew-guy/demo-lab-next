@@ -20,8 +20,6 @@ const Card = ({ doctor }) => {
     const {currentDoctor, setCurrentDoctor} = useCurrentDoctor() 
     const { modalIsOpen, setModalIsOpen } = useModal()
 
-    console.log(doctor.imgSrc)
-
     const openModal =() => {
         setModalIsOpen(true)
         setCurrentDoctor(doctor)

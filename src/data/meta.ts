@@ -1,4 +1,4 @@
-import { bucketID, lab, objectFunction } from "./lab";
+import { lab, objectFunction } from "./lab";
 
 interface Metadata {
     title: string,

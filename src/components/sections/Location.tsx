@@ -37,9 +37,9 @@ const GoogleMapView = (props) => {
     zoom={13}
     containerStyle={containerStyle}
     styles={props.mapStyle}
-    initialCenter={{ lat: 28.6184,lng: 77.3738 }}
+    initialCenter={{ lat: lab.labLat,lng:lab.labLong }}
     >
-      <Marker position={{ lat: 28.6184,lng: 77.3738 }} />
+      <Marker position={{ lat: lab.labLat,lng:lab.labLong }} />
     </Map>
   )
 }
