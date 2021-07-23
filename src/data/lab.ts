@@ -1,11 +1,11 @@
 // ======================================>
 // TODO => Changeables
-const labLong = 28.570969720000118
-const labLat = 77.37952129983528
-export const bucketID = "edfd61d0-03c6-4955-bba0-959e15735fd1"
-const labName = "Aashirwad Diagnostics" 
-const contactNumber = "9958340010"
-const labLocation = "Sector Beta 1, Greater Noida"
+const labLong = 28.48424414281754
+const labLat = 77.50739847539676
+export const bucketID = "f32daa37-6d86-45ef-b6a5-418298f0ffe6"
+const labName = "One Pro Lab" 
+const contactNumber = "9820178330"
+const labLocation = "Sector 51, Noida"
 
 // ======================================> 
 
@@ -29,6 +29,9 @@ export const lab : labObj = {
         objectFunction('1.png'),
         objectFunction('2.png'),
         objectFunction('3.png'),
+        objectFunction('4.png'),
+        objectFunction('5.png'),
+        objectFunction('6.png'),
     ],
     contactNumber,
     labLocation,

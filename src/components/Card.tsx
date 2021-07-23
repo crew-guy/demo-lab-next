@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react'
 import Chevron from '@assets/images/chevron.svg'
+// import chevron from '@images/chevron.png'
 import {useCurrentDoctor} from '@contexts/DoctorContext'
 import { useModal } from '@contexts/ModalContext'
 import Image from 'next/image'

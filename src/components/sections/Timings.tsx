@@ -19,16 +19,24 @@ const Timings = () => (
                     if (i > 0) {
                         return
                     }
-                    return (
-                    <div key={i} >
+                    if (!timing.slotTwoTimings) {
+                        return (
                             <div className="operational-hours" >
                                 {`${formatTime(timing.timings[0])}`} - {`${formatTime(timing.timings[1])}`}
-                                </div>
-                            <div className="operational-hours" >
-                                {`${formatTime(timing.slotTwoTimings[0])}`} - {`${formatTime(timing.slotTwoTimings[1])}`}
                             </div>
-                    </div>
-                    )
+                        )
+                    } else {
+                        return (
+                        <div key={i} >
+                                <div className="operational-hours" >
+                                    {`${formatTime(timing.timings[0])}`} - {`${formatTime(timing.timings[1])}`}
+                                    </div>
+                                {/* <div className="operational-hours" >
+                                    {`${formatTime(timing.slotTwoTimings[0])}`} - {`${formatTime(timing.slotTwoTimings[1])}`}
+                                </div> */}
+                        </div>
+                        )
+                    }
                 })}
                 <div style={{display:"flex", justifyContent:"space-between"}}>
                     <span className="section-cta">

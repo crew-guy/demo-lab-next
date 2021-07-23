@@ -10,9 +10,11 @@ export const CarouselContainer = () => {
     const [width, setWidth] = useState(100)
     const scale = 0.5668
     
-    useEffect( async () =>
+    useEffect( () =>
     {
-        await setWidth(window.innerWidth)
+        (async () => {
+            await setWidth(window.innerWidth)
+        })()
     }, [])
 
     return (

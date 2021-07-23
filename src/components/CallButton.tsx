@@ -5,10 +5,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const CallButton = ({contactNumber}) => {
+    const buttonHeight = 10
+    const buttonWidth = 25
+    
     return (
         <div className="call-button">
             <Link href={`tel:${contactNumber}`}>
-                {/* <Image src={callButton} alt="primary-button" /> */}
+                {/* <Image height={buttonHeight} width={buttonWidth}src={callButton} alt="primary-button" /> */}
                 <PhoneButton/>
             </Link>
         </div>

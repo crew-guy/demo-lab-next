@@ -11,7 +11,8 @@ const TimingsLayout = () => {
                 </div>
                 <ul className="timings-list">
                     {timings.map(timing => {
-                        if (timing.slotTwoTimings) {
+                        console.log(timing.slotTwoTimings)
+                        if (!timing.slotTwoTimings) {
                         return (
                             <li className="day-of-week" >
                                 {timing.name}
@@ -21,9 +22,10 @@ const TimingsLayout = () => {
                             return (
                                 <li className="day-of-week" >
                                     {timing.name}
-                                    <p className="operational-hours" >{`${formatTime(timing.timings[0])}`} - {`${formatTime(timing.timings[1])}`}</p>
-                                    <p className="operational-hours" >{`${formatTime(timing.slotTwoTimings[0])}`} - {`${formatTime(timing.slotTwoTimings[1])}`}</p>
-                                </li> )
+                                    <p className="operational-hours" > <strong></strong> {` : ${formatTime(timing.timings[0])}`} - {`${formatTime(timing.timings[1])}`}</p>
+                                    <p className="operational-hours" > <strong></strong> {` : ${formatTime(timing.slotTwoTimings[0])}`} - {`${formatTime(timing.slotTwoTimings[1])}`}</p>
+                                </li>
+                            )
                         }
                     })}
                 </ul>

@@ -6,9 +6,10 @@ import {useRouter} from 'next/router'
 
 const Backbutton = () => {
     const router = useRouter()
+    const buttonDiameter = 20
     return (
         <div onClick={()=>router.push('/')} className="floating-button">
-            {/* <Image src={floatBack} alt="" /> */}
+            {/* <Image height={buttonDiameter} width={buttonDiameter} src={floatBack} alt="" /> */}
             <FloatBack/>
         </div>
     )

@@ -2,10 +2,6 @@ require('dotenv').config()
 
 // next.config.js
 module.exports = {
-    images: {
-      domains: ['cdn.farmako.in','randomuser.me'],
-      disableStaticImages: true
-  },
   env:{
     INSTI_TYPE : process.env.INSTI_TYPE
   },
@@ -15,5 +11,9 @@ module.exports = {
       use: ['@svgr/webpack'],
     });
     return config;
-  }
+  },
+  images: {
+    domains: ['cdn.farmako.in'],
+    disableStaticImages: true
+  },
 }

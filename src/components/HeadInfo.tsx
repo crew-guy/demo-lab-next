@@ -15,7 +15,7 @@ const HeadInfo = () => {
                 {/* <Image
                     src={threeIcons} className="three-icons" alt="more info"
                 /> */}
-                <ThreeIcons className="three-icons"/>
+                <ThreeIcons/>
             </div>
             <CallButton contactNumber={lab.contactNumber}/>
         </div>

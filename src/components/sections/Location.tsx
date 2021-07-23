@@ -34,12 +34,14 @@ const GoogleMapView = (props) => {
   return (
     <Map
     google={props.google}
-    zoom={13}
+    // zoom={13}
     containerStyle={containerStyle}
-    styles={props.mapStyle}
+    // styles={props.mapStyle}
     initialCenter={{ lat: lab.labLat,lng:lab.labLong }}
     >
-      <Marker position={{ lat: lab.labLat,lng:lab.labLong }} />
+      <Marker
+        // position={{ lat: lab.labLat, lng: lab.labLong }}
+      />
     </Map>
   )
 }
