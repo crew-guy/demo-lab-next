@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
         <CarouselContainer />
         {/* <AnimateSharedLayout>
           <AnimatePresence exitBeforeEnter> */}
-            <Meta/>
+            <Meta/>d
             <Component {...pageProps} />
           {/* </AnimatePresence>
         </AnimateSharedLayout> */}
