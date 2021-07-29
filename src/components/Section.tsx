@@ -1,6 +1,6 @@
 import React from 'react'
 import CallToAction from '@components/CallToAction'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 interface ISection{
     // TODO : Fix this image type to include properly defined types as per use case to avoid type checkin errors 

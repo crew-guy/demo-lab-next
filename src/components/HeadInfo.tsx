@@ -3,7 +3,7 @@ import React from 'react'
 import ThreeIcons from '@assets/images/three-circles.svg'
 import CallButton from '@components/CallButton'
 import { lab } from '@data/lab'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 const HeadInfo = () => {
     return (

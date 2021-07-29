@@ -1,7 +1,7 @@
-import '../styles/globals/styles.css'
+import "@styles/styles.css"
 import { ModalProvider } from '@contexts/ModalContext'
 import { CurrentDoctorProvider } from '@contexts/DoctorContext'
-import { CarouselContainer } from '../src/components/Carousel'
+import { CarouselContainer } from '@components/Carousel'
 import Meta from '@components/Meta'
 // import {AnimateSharedLayout,AnimatePresence} from 'framer-motion'
 

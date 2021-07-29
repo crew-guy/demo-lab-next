@@ -2,7 +2,7 @@ import React from 'react'
 // import chevron from '@assets/images/chevron.png'
 import Chevron from '@assets/images/chevron.svg'
 import Link from 'next/link'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 const CallToAction = ({linkText, destPath}) => {
     const chevronHeight = 10;

@@ -1,0 +1,36 @@
+@import './flexbox';
+
+.carousel-container {
+	position: relative;
+	.lab-initials {
+		text-align: center;
+		@include flexbox(center, center, column);
+		position: absolute;
+		width: 100%;
+		top: 80%;
+		// background: rgba(0, 255, 255, 0.4);
+		z-index: 2;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff;
+		font-family: 'Avenir 3';
+		.lab-name {
+			font-family: 'Avenir 5';
+			text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+			font-size: 2rem;
+		}
+		.lab-location {
+			font-size: 1.3rem;
+			text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+		}
+	}
+	.farmako-logo-container {
+		position: absolute;
+		top: 4%;
+		left: 2%;
+		z-index: 45;
+		img {
+			height: 1.3rem;
+		}
+	}
+}

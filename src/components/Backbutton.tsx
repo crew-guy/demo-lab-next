@@ -1,7 +1,7 @@
 import React from 'react'
 // import floatBack from '@assets/images/float-back.png'
 import FloatBack from '@assets/images/float-back.svg'
-import Image from 'next/image'
+// import Image from 'next/image'
 import {useRouter} from 'next/router'
 
 const Backbutton = () => {

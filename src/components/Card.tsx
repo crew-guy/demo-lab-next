@@ -3,7 +3,7 @@ import Chevron from '@assets/images/chevron.svg'
 // import chevron from '@images/chevron.png'
 import {useCurrentDoctor} from '@contexts/DoctorContext'
 import { useModal } from '@contexts/ModalContext'
-import Image from 'next/image'
+// import Image from 'next/image'
 import Section from '@components/Section'
 import imgSrc from '@assets/images/like-icon.svg'
 
@@ -40,7 +40,8 @@ const Card = ({ doctor }) => {
         <>
             <div className="card"  onClick={openModal} >
                 <div className="img-container">
-                    <Image width={70} height={70} src={doctor.imgSrc} alt="" className="docImg" />
+                    {/* <Image width={70} height={70} src={doctor.imgSrc} alt="" className="docImg" /> */}
+                    <img src={doctor.imgSrc} alt="" className="docImg" />
                 </div>
                 <div className="text">
                     <div className="card-title">{ doctor.name}</div>

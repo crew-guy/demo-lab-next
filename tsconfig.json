@@ -37,6 +37,9 @@
       "@images/*": [
         "./public/assets/images/*"
       ],
+      "@styles/*": [
+        "./styles/globals/*"
+      ],
     },
     "strict": false
   },

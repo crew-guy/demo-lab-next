@@ -1,0 +1,58 @@
+.cards-container {
+	@include flexbox(flex-start, center, row);
+	overflow-x: scroll;
+	padding: 1rem 1.5rem;
+	margin-left: 0;
+	padding-left: 0rem !important;
+	::-webkit-scrollbar {
+		//TODO Make this invisible
+		display: none !important;
+		visibility: hidden !important;
+	}
+	.card {
+		border-radius: 0.6rem;
+		margin-right: 0.9rem;
+		margin-left: 0.2rem;
+		cursor: pointer;
+		box-shadow: 0 2px 2px 2px rgba(48, 48, 68, 0.3);
+		padding: 1rem;
+		padding-right: 0.3rem;
+		min-width: 350px;
+		z-index: 3;
+		@include flexbox(center, center, row);
+		.img-container {
+			@include flexbox(center, center, row);
+		}
+
+		.img-container img {
+			border-radius: 50%;
+			height: 7.6rem;
+			width: 7.6rem;
+		}
+		.text {
+			width: 150px;
+			@include flexbox(center, flex-start, column);
+			margin-left: 1.4rem;
+			font-size: 1rem;
+			line-height: 26px !important;
+			.card-title {
+				font-weight: bold;
+				font-family: 'Avenir 5';
+				line-height: normal;
+			}
+			.consult-doc {
+				display: flex;
+				margin-top: 1.3rem;
+			}
+			.call-to-action.text {
+				font-size: 1.1rem;
+				font-weight: bold;
+				margin-left: 0;
+			}
+			.cta-chevron img {
+				height: 1rem;
+				margin-left: 0;
+			}
+		}
+	}
+}

@@ -4,7 +4,7 @@ import FarmakoLogo from '@images/farmako-logo.svg'
 import {useEffect, useState} from 'react'
 import { Carousel } from 'react-responsive-carousel';
 import { lab } from '@data/lab'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 export const CarouselContainer = () => {
     const [width, setWidth] = useState(100)
@@ -43,7 +43,8 @@ export const CarouselContainer = () => {
                         lab.labHeroImages.map((image, i) => {
                             return (
                             <div key={i} >
-                                <Image blurDataURL={image} placeholder="blur" height={scale*width} width={width} src={image} />
+                                {/* <Image blurDataURL={image} placeholder="blur" height={scale*width} width={width} src={image} /> */}
+                                <img src={image} />
                             </div>
                         )})
                     }

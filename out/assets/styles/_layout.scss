@@ -1,0 +1,131 @@
+@import './flexbox';
+
+.layout-container {
+	margin: 1rem;
+}
+
+.services-list {
+	margin-left: 1.3rem;
+	line-height: 2rem;
+	font-size: 1.1rem;
+}
+
+.head-info-box {
+	margin-left: 1rem;
+}
+
+.test-and-book {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.book-appoint {
+	font-family: 'Avenir 5';
+	font-size: 1.35rem;
+}
+
+section {
+	padding: 0 0.6rem;
+	margin-top: 2.4rem;
+	font-size: 0.9rem;
+}
+
+.section-heading {
+	display: flex;
+	margin-bottom: 1rem;
+}
+.section-logo {
+	height: 1.2rem;
+	width: 1.2rem;
+	margin-right: 0.5rem;
+	@include flexbox(flex-start, center, center);
+}
+
+.section-body {
+	margin-left: 2rem;
+}
+
+.section-title {
+	font-size: 1.1rem;
+	@include flexbox(flex-start, center, center);
+	font-family: 'Avenir 3';
+}
+
+.heading-icon {
+	position: relative;
+	left: 2%;
+	transform: translateY(8.5px);
+	path {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.cta-container {
+	@include flexbox(flex-start, center, row);
+	cursor: pointer;
+	&.right-align {
+		justify-content: flex-end;
+		background: red;
+	}
+}
+
+.cta {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	cursor: pointer;
+	align-items: center;
+}
+
+.call-to-action.text {
+	color: #5f7aff;
+	font-size: 1 rem;
+	font-weight: bold;
+}
+
+.cta-chevron {
+	height: 2rem;
+	margin-left: 0.4rem;
+	@include flexbox(center, center, row);
+}
+
+.section-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+// Timings
+.day-of-week {
+	font-family: 'Avenir 3';
+	font-size: 1.1rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.operational-hours {
+	font-size: 1rem;
+	font-weight: lighter;
+	font-family: 'Avenir 1';
+}
+
+.timings-list {
+	margin-left: 1.4rem;
+}
+
+// Map image
+.map-img img {
+	width: 100%;
+}
+
+.location {
+	margin-bottom: 3rem;
+}
+
+.blurred {
+	filter: blur(0.3rem) grayscale(40%);
+}

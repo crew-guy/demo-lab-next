@@ -16,8 +16,8 @@ const ServicesLayout = () => {
             </div>
             <ul className="services-list">
                 {
-                    services.map((service:servicesObj) => (
-                        <li>{service.name}</li>
+                    services.map((service:servicesObj,i) => (
+                        <li key={i} >{service.name}</li>
                     ))
                 }
             </ul>

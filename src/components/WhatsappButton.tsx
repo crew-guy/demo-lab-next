@@ -1,7 +1,7 @@
 import React from 'react'
 // import whatsappButton from '@images/whatsapp-button.png'
 import WAButton from '@images/whatsapp-button.svg'
-import Image from 'next/image'
+// import Image from 'next/image'
 import {lab} from '@data/lab'
 
 const WhatsappButton = () => {

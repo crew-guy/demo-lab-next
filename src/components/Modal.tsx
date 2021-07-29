@@ -5,7 +5,7 @@ import WhatsappButton from '@components/WhatsappButton'
 import Cross from '@assets/images/cross.svg'
 import {useCurrentDoctor} from '@contexts/DoctorContext'
 import { useModal } from '@contexts/ModalContext'
-import Image from 'next/image'
+// import Image from 'next/image'
 import {motion} from 'framer-motion'
 
 const Modal = () => {
@@ -34,7 +34,8 @@ const Modal = () => {
             </button>
             <div className="doc-info">
                 <div className="img-cnr">
-                    <Image width={140} height={140} src={currentDoctor.imgSrc} className="doc-img"  />
+                    {/* <Image width={140} height={140} src={currentDoctor.imgSrc} className="doc-img"  /> */}
+                    <img src={currentDoctor.imgSrc} className="doc-img"  />
                 </div>
                 <div className="text">
                     <p className="card-title">{ currentDoctor.name}</p> 
