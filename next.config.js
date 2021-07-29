@@ -20,7 +20,6 @@ module.exports = {
     })
     return config;
   },
-  // trailingSlash: true,
   images: {
     domains: ['cdn.farmako.in'],
     disableStaticImages: true
