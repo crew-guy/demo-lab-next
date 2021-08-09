@@ -25,8 +25,8 @@ const Modal = () => {
                         setModalIsOpen(false)
                         // console.log(modalIsOpen)
                         document.body.classList.remove('unfocus')
-                        document.querySelector('.layout-container').classList.remove('blurred')
-                        document.querySelector('.carousel-wrapper').classList.remove('blurred')
+                        document.querySelector('.layout-container').classList.remove('blurred');
+                        document.querySelector('.carousel-wrapper').classList.remove('blurred');
                     }
                 } >
                 {/* <Image src={cross} alt="close modal" /> */}
@@ -35,7 +35,7 @@ const Modal = () => {
             <div className="doc-info">
                 <div className="img-cnr">
                     {/* <Image width={140} height={140} src={currentDoctor.imgSrc} className="doc-img"  /> */}
-                    <img src={currentDoctor.imgSrc} className="doc-img"  />
+                    <img src={currentDoctor.imgSrc} className="doc-img"/>
                 </div>
                 <div className="text">
                     <p className="card-title">{ currentDoctor.name}</p> 

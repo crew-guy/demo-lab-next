@@ -25,13 +25,21 @@ export const objectFunction = (string:String):String => {
 
 export const lab : labObj = {
     labName,
+    // labHeroImages: [
+    //     objectFunction('1.png'),
+    //     objectFunction('2.png'),
+    //     objectFunction('3.png'),
+    //     objectFunction('4.png'),
+    //     objectFunction('5.png'),
+    //     objectFunction('6.png'),
+    // ],
     labHeroImages: [
-        objectFunction('1.png'),
-        objectFunction('2.png'),
-        objectFunction('3.png'),
-        objectFunction('4.png'),
-        objectFunction('5.png'),
-        objectFunction('6.png'),
+        'https://unsplash.it/100/400',
+        'https://unsplash.it/200/400',
+        'https://unsplash.it/300/400',
+        'https://unsplash.it/400/400',
+        'https://unsplash.it/500/400',
+        'https://unsplash.it/600/400',
     ],
     contactNumber,
     labLocation,

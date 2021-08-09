@@ -3,13 +3,12 @@
 .carousel-container {
 	position: relative;
 	.lab-initials {
-		text-align: center;
 		@include flexbox(center, center, column);
 		position: absolute;
 		width: 100%;
 		top: 80%;
 		// background: rgba(0, 255, 255, 0.4);
-		z-index: 2;
+		z-index: 200;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		color: #fff;
