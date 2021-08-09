@@ -3,7 +3,7 @@
 const labLong = 28.48424414281754
 const labLat = 77.50739847539676
 export const bucketID = "f32daa37-6d86-45ef-b6a5-418298f0ffe6"
-const labName = "One Pro Lab" 
+const labName = "Lund Pro Lab" 
 const contactNumber = "9820178330"
 const labLocation = "Sector 51, Noida"
 

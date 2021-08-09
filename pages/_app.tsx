@@ -1,4 +1,4 @@
-import "@styles/styles.css"
+import "../styles/styles.css"
 import { ModalProvider } from '@contexts/ModalContext'
 import { CurrentDoctorProvider } from '@contexts/DoctorContext'
 import { CarouselContainer } from '@components/Carousel'
